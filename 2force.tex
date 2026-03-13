@@ -104,6 +104,10 @@
   \vspace{25pt}{\fontsize{9.5}{11}\selectfont\bfseries\color{ColorMainText}#1}\par
   \vspace{-3pt}{\color{ColorMuted}\rule{30mm}{1pt}}\par\vspace{4pt}}
 
+\newcommand{\degree}[3]{%
+  {\fontsize{9.5}{14}\selectfont\color{ColorMainText}
+  \textbf{#2} \hfill \textcolor{ColorMuted}{#1}\\
+  \hspace*{1em}#3\par\vspace{4pt}}}
 
 \newcommand{\project}[5]{%
   {\fontsize{9.5}{11}\selectfont\bfseries\color{ColorMainText}#1}\par
@@ -269,10 +273,7 @@ My approach emphasizes clean code principles, comprehensive testing strategies u
 }
 
 \mainSection{Academic Background}
-{\fontsize{9.5}{14}\selectfont\color{ColorMainText}
-  \textbf{Bachelor of Science in Computer Science} \hfill \textcolor{ColorMuted}{2019}\\
-  \hspace*{1em}University of Washington, Seattle\par\vspace{4pt}
-}
+\degree{2019}{Bachelor of Science in Computer Science}{University of Washington, Seattle}
 
 \medskip
 
