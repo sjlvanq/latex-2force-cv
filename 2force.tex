@@ -116,6 +116,20 @@
   {\fontsize{8.5}{12}\selectfont\color{ColorMainText}\begin{itemize}#4\end{itemize}}
   {\fontsize{8}{10}\selectfont\href{https://#5}{\color{ColorAccent}#5}}\par\vspace{8pt}}
 
+\newcommand{\job}[3]{%
+  {\fontsize{10}{12}\selectfont\bfseries\color{ColorMainText}#1}\par
+  {\fontsize{8.5}{11}\selectfont\color{ColorMuted}#2}\par\vspace{4pt}
+  {\fontsize{9.5}{13}\selectfont\color{ColorMainText}
+    \begin{itemize}
+      #3
+    \end{itemize}
+  }\vspace{8pt}}
+
+\newcommand{\jobnote}[4]{%
+  {\fontsize{10}{12}\selectfont\bfseries\color{ColorMainText}#1}\par
+  {\fontsize{8.5}{11}\selectfont\color{ColorMuted}#2}\par\vspace{2pt}
+  {\fontsize{9.5}{13}\selectfont\color{ColorMainText}#3}\par\vspace{#4}}
+
 \newcommand{\cert}[3]{%
   \noindent\begin{tabular}{@{}p{0.10\linewidth}@{\hspace{4pt}}p{0.65\linewidth}@{\hspace{10pt}}p{0.25\linewidth}@{}}
     {\fontsize{8}{11}\selectfont\color{ColorMuted}#1} & 
@@ -228,7 +242,6 @@ My approach emphasizes clean code principles, comprehensive testing strategies u
 }\par
 
 \mainSection{Featured Projects}
-
 \project%
   {EcoTrack --- Sustainability Platform}%
   {Personal Project / 2024--2025}%
@@ -260,17 +273,12 @@ My approach emphasizes clean code principles, comprehensive testing strategies u
   {github.com/example/dataviz-dashboard}
 
 \mainSection{Work Experience}
-{\fontsize{10}{12}\selectfont\bfseries\color{ColorMainText}
-  Senior Full-Stack Software Engineer}\par
-{\fontsize{8.5}{11}\selectfont\color{ColorMuted}
-  Cloudwave Technologies Inc. / 2020--Present}\par
-\vspace{4pt}
-{\fontsize{9.5}{13}\selectfont\color{ColorMainText}
-  \begin{itemize}
-    \item Led development of customer-facing web platform serving 500K+ monthly active users, architecting frontend with React and backend services with Node.js.
-    \item Established best practices for code quality, testing standards, and CI/CD pipelines that reduced deployment time by 60\%.
-  \end{itemize}
-}
+\job{Senior Full-Stack Software Engineer}
+    {Cloudwave Technologies Inc. / 2020--Present}
+    {
+      \item Led development of customer-facing web platform serving 500K+ monthly active users, architecting frontend with React and backend services with Node.js.
+      \item Established best practices for code quality, testing standards, and CI/CD pipelines that reduced deployment time by 60\%.
+    }
 
 \mainSection{Academic Background}
 \degree{2019}{Bachelor of Science in Computer Science}{University of Washington, Seattle}
